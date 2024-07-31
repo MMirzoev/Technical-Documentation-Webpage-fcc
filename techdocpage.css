@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+#main-header {
+  height: 70px;
+  text-align: center;
+  position: relative;
+  background-color: rgb(233, 238, 225);
+  border-bottom: 1px solid rgb(209, 203, 203);
+}
+h1 {
+  line-height: 70px;
+  color: rgb(38, 77, 228);
+}
+.logo {
+  position: absolute;
+  width: 80px;
+  top: 5px;
+  left: 5px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgb(233, 238, 225);
+  border-right: 1px solid rgb(209, 203, 203);
+  width: 20%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+#content-header {
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 15px auto 0;
+}
+#main-menu {
+  list-style-type: none;
+  list-style-position: inside;
+  margin-bottom: 0px;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(33, 41, 88);
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.section-block a {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(33, 41, 88);
+}
+
+#main-menu li {
+  border-bottom: 1px solid rgb(209, 203, 203);
+}
+
+#main-doc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 20px;
+}
+.section-block {
+  width: 80%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 50px;
+  line-height: 30px;
+  font-size: 17px;
+}
+p {
+  margin-bottom: 20px;
+  line-height: 24px;
+  text-align: justify;
+}
+h3 {
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.section-block img {
+  max-width: 100%;
+}
+
+header {
+  font-size: 25px;
+  font-weight: bold;
+  color: darkblue;
+  margin-bottom: 12px;
+}
+
+.section-block ul {
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+code {
+  word-break: normal;
+  word-wrap: normal;
+  white-space: pre-wrap; /*This helps to save lines and spaces of all <code> elements, without using <br> evertime.*/
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.4rem;
+  padding: 5px;
+  background-color: rgb(231, 237, 241);
+  border-radius: 5px;
+}
+pre {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  white-space: pre-line;
+  background-color: rgb(231, 237, 241);
+}
+.section-block ul li {
+  line-height: 40px;
+}
+@media (max-width: 768px) {
+  #main-doc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #navbar {
+    width: 100%;
+    position: absolute;
+  }
+  .section-block {
+    position: relative;
+    top: 380px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .logo {
+    position: absolute;
+    width: 60px;
+    top: 12px;
+    left: 2px;
+  }
+}
